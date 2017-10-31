@@ -1,13 +1,34 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Node Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>James Lee</title>
   </head>
   <body>
-    <form action="http://localhost:8081/process_get" method="GET">
-      First Name:<input type="text" name="first_name"><br>
-      Last Name:<input type="text" name="last_name">
-      <input type="submit" value="Submit">
-    </form>
+    <div class="header">
+      <p class="intro">Hi,</p>
+      <p class="intro">It's great to meet you.</p>
+      <p class="name"> I'm James.</p>
+      <hr>
+      <p class="role1">Front End Developer.</p>
+      <p class="role2">Software Engineer.</p>
+      <p class="scroll">About Me<p>
+      <p class="arrow animation-target" onclick="smoothScroll(document.getElementById('about'))">&#9660</p>
+    </div>
+    <div class="about" id="about">
+      <p>Hi some stuff about me</p>
+    </div>
+    <div class="work">
+    </div>
+    <div class="projects">
+    </div>
+    <div class="footer">
+      <p>I'm sure you have lots of great ideas. Let's start working.</p>
+    </div>
   </body>
 </html>

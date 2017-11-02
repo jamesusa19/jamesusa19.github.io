@@ -1,61 +1,97 @@
 body {
-	background-color: #2b2b2b;
+
+    background-image: url("./img/background.jpg");;
 }
+
+/* Different colors for fonts */
+.red {
+    color: #F92672;
+}
+
+.green {
+    color: #A6E22E;
+}
+
+.blue {
+    color: #66D9EF;
+}
+
+.purple {
+    color: #AE81FF;
+}
+
+.orange {
+    color: #FD971F;
+}
+
+.gray {
+    color: #75715E;
+}
+
+.light-gray {
+    color: #878376;
+}
+
+.yellow {
+    color: #FFE792;
+}
+
 
 /* CSS for the home page in header */
 .header {
-	padding-top: 120px;
-	margin: auto;
-	width: 400px;
+    padding-top: 120px;
+    margin: auto;
+    width: 400px;
 }
 
 .intro {
-	font-family: 'VT323', monospace;
-	font-size: 40px;
-	color: white;
-	text-align: left;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    color: white;
+    text-align: left;
 }
 
 .role1 {
-	font-family: 'Josefin Slab', serif;
-	color: #F92672;
-	font-size: 40px;
-	text-align: left;
+    font-family: 'Josefin Slab', serif;
+    color: #F92672;
+    font-size: 40px;
+    text-align: left;
 }
 
 .role2 {
-	font-family: 'Josefin Slab', serif;
-	color: #AE81FF;
-	font-size: 40px;
-	text-align: left;
+    font-family: 'Josefin Slab', serif;
+    color: #AE81FF;
+    font-size: 40px;
+    text-align: left;
 }
 
 .name {
-	font-family: 'Roboto', sans-serif;
-	font-size: 40px;
-	font-weight: 900;
-	color: #A6E22E;
-	text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #A6E22E;
+    text-align: left;
 }
 
 .scroll {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	color: white;
-	padding-top: 160px;
-	padding-right: 40px;
-	margin: 0px;
+    text-align: center;
+    font-family: Consolas, monaco, monospace;
+    font-weight: 400;
+    color: white;
+    padding-top: 160px;
+    padding-right: 40px;
+    margin: 0px;
+    font-size: 16px;
 }
 
 .arrow {
-	color: white;
-	font-size: 40px;
-	margin : 0px;
-	text-align: center;
-	padding-right: 40px;
-	padding-bottom: 200px;
-	cursor: pointer;
+    color: white;
+    font-size: 40px;
+    margin : 0px;
+    text-align: center;
+    padding-right: 40px;
+    padding-bottom: 200px;
+    cursor: pointer;
 }
 
 .animation-target {
@@ -91,7 +127,112 @@ body {
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
+/* CSS for About section */
+.about {
+    width: 1200px;
+    padding-top: 100px;
+    font-family: Consolas, monaco, monospace;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+}
+
+.line-num {
+    padding-left: 10px;
+    padding-right: 30px;    
+}
+
+.indent > .line-num {
+    padding-left: 10px;
+    padding-right: 70px;
+}
+
+.line-num2 {
+    padding-right: 30px;
+}
+
+.indent > .line-num2 {
+    padding-right: 70px;
+}
+
+/* CSS for Experience section */
+.experience {
+    width: 1200px;
+    margin: auto;
+}
+
+.spacer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.project {
+    width: 1200px;
+    height: 400px;
+    display: inline-block;
+    background-color: #404040;
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+}
+
+.project:hover > #fade-text {
+    opacity:.9;
+}
+
+.picture {
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius: 20px;
+}
+
+.picture > img {
+    width: 400px;
+    height: 400px;
+}
+
+.summary {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 700px;
+    height: 350px;
+    float: right;
+}
+
+.project-title {
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    color: #6666ff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.project-description {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    text-align: right;
+}
+
+#fade-text {
+    position: absolute;
+    background: black;
+    color: #fff;
+    opacity:0;
+    transition:1s;
+    width: 1200px;
+    height: 400px;
+    text-align: center;
+}
+
+#fade-text > p {
+    line-height: 300px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+}
+
 /* CSS for the footer */
 .footer {
-	padding-bottom: 1000px;
+    padding-bottom: 1000px;
 }

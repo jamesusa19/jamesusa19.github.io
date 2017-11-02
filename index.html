@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="index.js"></script>
     <title>James Lee</title>
   </head>
@@ -21,11 +22,65 @@
       <p class="arrow animation-target" onclick="smoothScroll(document.getElementById('about'))">&#9660</p>
     </div>
     <div class="about" id="about">
-      <p>Hi some stuff about me</p>
+      <p class="section-wrapper"><span class="gray line-num">1</span><span class="blue">aboutMe</span>(){</p>
+        <p class="indent"><span class="gray line-num">2</span><span class="blue">var</span> education <span class="red">=</span> <span class="yellow">"Current UCSD graduate with a B.S. in Computer Science. "</span>;</p>
+        <p class="indent"><span class="gray line-num">3</span><span class="blue">var</span> passion <span class="red">=</span><span class="yellow">"Passionate about front-end web development. "</span>;</p>
+        <p class="indent"><span class="gray line-num">4</span>passion <span class="red">+=</span> <span class="yellow">"Enjoys creating functional websites and clean experiences."</span>;</p>
+      <p class="section-wrapper"><span class="gray line-num">5</span>}</p>
+      <p class="section-wrapper"><span class="gray line-num">6</span></p>
+      <p class="section-wrapper"><span class="gray line-num">7</span><span class="light-gray">/* Here's some fun things about me! */</span></p>
+      <p class="section-wrapper"><span class="gray line-num">8</span><span class="blue">var</span> me <span class="red">= new</span> James();</p>
+      <p class="section-wrapper"><span class="gray line-num">9</span><span class="blue">me</span>.hobbies <span class="red">=</span> [<span class="yellow">"playing videogames"</span>,<span class="yellow">"hanging with friends"</span>,<span class="yellow">"doing new things"</span>]</p>
+      <p class="section-wrapper"><span class="gray line-num2">10</span><span class="red">if</span>(me.<span class="blue">isEatingGoodFood</span>() <span class="red">==</span> <span class="purple">true</span>){</p>
+      <p class="indent"><span class="gray line-num2">11</span>me.mood <span class="red">==</span> <span class="yellow">"Happy"</span>;</p>
+      <p class="section-wrapper"><span class="gray line-num2">11</span>}</p>
+      <p class="scroll">Experience<p>
+      <p class="arrow animation-target" onclick="smoothScroll(document.getElementById('experience'))">&#9660</p>
     </div>
-    <div class="work">
-    </div>
-    <div class="projects">
+    <div class="experience" id="experience">
+      <div class="project" onclick="window.open('https://tritongaming.org/');">
+        <div id="fade-text"><p>View Page</p></div>
+        <div class="picture">
+          <img src="./img/triton-gaming.jpg"></img>
+        </div>
+        <div class="summary">
+          <p class="project-title blue">Triton Gaming Website</p>
+          <p class="project-description">A homepage for our student organization Triton Gaming. Provides detailed information about the organization and its members. Created with React.js with future plans to implement user accounts with a point tracking system.</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="project" onclick="window.open('http://triton-trade.herokuapp.com/');">
+        <div id="fade-text"><p>View Page</p></div>
+        <div class="picture">
+          <img src="./img/triton-trade.png"></img>
+        </div>
+        <div class="summary">
+          <p class="project-title blue">Triton Trade</p>
+          <p class="project-description">Triton Trade is a buy and sell website where users can create an account and post items that they want to sell or search for items they want to buy. User data and item listings were managed using PostgreSQL through Ruby on Rails.</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="project" onclick="window.open('https://devpost.com/software/sugoi-smash');">
+        <div id="fade-text"><p>View Page</p></div>
+        <div class="picture">
+          <img src="./img/sugoi-smash.jpg"></img>
+        </div>
+        <div class="summary">
+          <p class="project-title blue">Sugoi Smash</p>
+          <p class="project-description">Sugoi Smash is a hackathon game in virtual reality that utilizes Oculus Rift/Leap Motion to recognize hand movements. Developed using Unity and C# scripts that control various different UI elements and physics.</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="project">
+        <div id="fade-text"><p>Oh you're already here</p></div>
+        <div class="picture">
+          <img src="./img/james-lee.jpg"></img>
+        </div>
+        <div class="summary">
+          <p class="project-title blue">Personal Website</p>
+          <p class="project-description">This is a website designed to showcase a little bit about me and about my goals as a developer. Made mostly using plain HTML and CSS with some Javascript.</p>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <p>I'm sure you have lots of great ideas. Let's start working.</p>

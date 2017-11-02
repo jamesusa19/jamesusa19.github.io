@@ -1,6 +1,8 @@
 body {
 
     background-image: url("./img/background.jpg");;
+    margin: 0;
+    padding: 0;
 }
 
 /* Different colors for fonts */
@@ -232,7 +234,43 @@ body {
     font-size: 60px;
 }
 
+/* CSS for the closing remarks */
+.closing {
+    width: 800px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.closing > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.closing > img {
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 /* CSS for the footer */
 .footer {
-    padding-bottom: 1000px;
+    background-color: #191919;
+    height: 50px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.quote {
+    text-align: left;
+}
+
+.made {
+    text-align: right;
 }

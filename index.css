@@ -133,6 +133,7 @@ body {
     padding-left: 5%;
     color: white;
     margin: auto;
+    display: inline-block;
 }
 
 .line-num {
@@ -155,7 +156,19 @@ body {
     padding-right: 20px;
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 800px) and (max-width:1200){
+    .about {
+        width: 1200px;
+        padding-top: 100px;
+        font-family: Consolas, monaco, monospace;
+        font-size: 20px;
+        padding-left: 14%;
+        color: white;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1201px){
     .about {
         width: 1200px;
         padding-top: 100px;
@@ -169,6 +182,67 @@ body {
 
 /* CSS for Experience section */
 .experience {
+    width: 95%;
+    margin: auto;
+}
+
+.spacer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.project {
+    width: 100%;
+    height: 150px;
+    background-color: #404040;
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.picture > img {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+.summary {
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 45%;
+    overflow: auto;
+    float: right;
+    text-align: right;
+}
+
+.project-title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #6666ff;
+    font-size: 80%;
+}
+
+.project-description {
+    margin-top: 5px;
+    color: white;
+    font-size: 65%;
+}
+
+#fade-text {
+    position: absolute;
+    background: black;
+    color: #fff;
+    opacity:0;
+    transition:1s;
+    width: 95%;
+    height: 150px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 60px;
+}
+
+@media only screen and (min-width: 800px) and (max-width:1200){
+.experience {
     width: 1200px;
     margin: auto;
 }
@@ -181,23 +255,18 @@ body {
 .project {
     width: 1200px;
     height: 400px;
-    display: inline-block;
     background-color: #404040;
     box-shadow: 10px 10px 5px black;
     cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .project:hover > #fade-text {
     opacity:.9;
 }
 
-.picture {
-    width: 400px;
-    height: 400px;
-    float: left;
-}
-
 .picture > img {
+    float: left;
     width: 400px;
     height: 400px;
 }
@@ -209,21 +278,18 @@ body {
     width: 700px;
     height: 350px;
     float: right;
+    text-align: right;
 }
 
 .project-title {
-    text-align: right;
-    font-family: 'Quicksand', sans-serif;
+
     color: #6666ff;
     font-size: 30px;
-    font-weight: 400;
 }
 
 .project-description {
     color: white;
-    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
-    text-align: right;
 }
 
 #fade-text {
@@ -235,12 +301,74 @@ body {
     width: 1200px;
     height: 400px;
     text-align: center;
+    line-height: 300px;
+    font-size: 60px;
+}
 }
 
-#fade-text > p {
-    line-height: 300px;
+@media only screen and (min-width: 1201px){
+.experience {
+    width: 1200px;
+    margin: auto;
+}
+
+.spacer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.project {
+    width: 1200px;
+    height: 400px;
+    background-color: #404040;
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
     font-family: 'Quicksand', sans-serif;
+}
+
+.project:hover > #fade-text {
+    opacity:.9;
+}
+
+.picture > img {
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+.summary {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 700px;
+    height: 350px;
+    float: right;
+    text-align: right;
+}
+
+.project-title {
+
+    color: #6666ff;
+    font-size: 30px;
+}
+
+.project-description {
+    color: white;
+    font-size: 24px;
+}
+
+#fade-text {
+    position: absolute;
+    background: black;
+    color: #fff;
+    opacity:0;
+    transition:1s;
+    width: 1200px;
+    height: 400px;
+    text-align: center;
+    line-height: 300px;
     font-size: 60px;
+}
 }
 
 /* CSS for the closing remarks */

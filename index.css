@@ -38,18 +38,55 @@ body {
     color: #FFE792;
 }
 
+/* CSS for the navigation arrows to different sections */
+.scroll {
+    text-align: center;
+    font-family: Consolas, monaco, monospace;
+    font-weight: 400;
+    color: white;
+    padding-top: 30%;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.arrow {
+    color: white;
+    font-size: 24px;
+    margin : 0px;
+    text-align: center;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) and (max-width:1200){
+    .header {
+        padding-top: 120px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .scroll {
+        font-size: 16px;
+        padding-top: 160px;
+    }
+
+    .arrow {
+        padding-bottom: 200px;
+    }
+}
 
 /* CSS for the home page in header */
 .header {
-    padding-top: 120px;
+    padding-top: 40%;
     margin: auto;
-    width: 400px;
+    width: 80%;
     padding-left: 2%;
+    font-size: 26px;
 }
 
 .intro {
     font-family: 'VT323', monospace;
-    font-size: 40px;
     color: white;
     text-align: left;
 }
@@ -57,71 +94,77 @@ body {
 .role1 {
     font-family: 'Josefin Slab', serif;
     color: #F92672;
-    font-size: 40px;
     text-align: left;
 }
 
 .role2 {
     font-family: 'Josefin Slab', serif;
     color: #AE81FF;
-    font-size: 40px;
     text-align: left;
 }
 
 .name {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
     font-weight: 900;
     color: #A6E22E;
     text-align: left;
 }
 
-.scroll {
-    text-align: center;
-    font-family: Consolas, monaco, monospace;
-    font-weight: 400;
-    color: white;
-    padding-top: 160px;
-    margin: 0px;
-    font-size: 16px;
+@media only screen and (min-width: 800px) and (max-width:1200){
+    .header {
+        padding-top: 120px;
+        width: 400px;
+    }
 }
 
-.arrow {
-    color: white;
-    font-size: 40px;
-    margin : 0px;
-    text-align: center;
-    padding-bottom: 200px;
-    cursor: pointer;
+@media only screen and (min-width: 1201px){
+    .header {
+        padding-top: 120px;
+        width: 400px;
+    }
 }
 
 /* CSS for About section */
 .about {
-    width: 1200px;
-    padding-top: 100px;
+    width: 95%;
+    padding-top: 50px;
     font-family: Consolas, monaco, monospace;
-    font-size: 20px;
-    padding-left: 14%;
+    font-size: 16px;
+    padding-left: 5%;
     color: white;
     margin: auto;
 }
 
 .line-num {
-    padding-left: 10px;
-    padding-right: 30px;    
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 10px;    
 }
 
 .indent > .line-num {
-    padding-left: 10px;
-    padding-right: 70px;
-}
-
-.line-num2 {
+    padding-left: 5px;
     padding-right: 30px;
 }
 
+.line-num2 {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
 .indent > .line-num2 {
-    padding-right: 70px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 1200px){
+    .about {
+        width: 1200px;
+        padding-top: 100px;
+        font-family: Consolas, monaco, monospace;
+        font-size: 20px;
+        padding-left: 14%;
+        color: white;
+        margin: auto;
+    }
 }
 
 /* CSS for Experience section */

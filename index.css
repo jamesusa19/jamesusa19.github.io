@@ -44,7 +44,7 @@ body {
     font-family: Consolas, monaco, monospace;
     font-weight: 400;
     color: white;
-    padding-top: 30%;
+    padding-top: 50px;
     margin: 0px;
     font-size: 12px;
 }
@@ -54,7 +54,7 @@ body {
     font-size: 24px;
     margin : 0px;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     cursor: pointer;
 }
 
@@ -198,6 +198,8 @@ body {
     box-shadow: 10px 10px 5px black;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
+    overflow: auto;
+    display: inline-block;
 }
 
 .picture > img {
@@ -209,9 +211,6 @@ body {
 .summary {
     padding-left: 5px;
     padding-right: 10px;
-    width: 45%;
-    overflow: auto;
-    float: right;
     text-align: right;
 }
 
@@ -225,7 +224,7 @@ body {
 .project-description {
     margin-top: 5px;
     color: white;
-    font-size: 65%;
+    font-size: 75%;
 }
 
 #fade-text {
@@ -373,7 +372,7 @@ body {
 
 /* CSS for the closing remarks */
 .closing {
-    width: 800px;
+    width: 80%;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -382,15 +381,15 @@ body {
 
 .closing > p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     color: white;
 }
 
 .closing img {
-    width: 100px;
-    height: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 50px;
+    height: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* CSS for the footer */
@@ -410,4 +409,10 @@ body {
 
 .made {
     text-align: right;
+}
+
+@media only screen and (min-width: 800px) and (max-width:1200){
+}
+
+@media only screen and (min-width: 1201px){
 }

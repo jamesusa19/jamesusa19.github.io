@@ -1,8 +1,8 @@
-body {
-
-    background-image: url("./img/background.jpg");;
+body, html {
+    background-image: url("./img/background.jpg");
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 /* Different colors for fonts */
@@ -58,20 +58,25 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) and (max-width:1200){
-    .header {
-        padding-top: 120px;
-        width: 400px;
+@media only screen and (min-width: 700px) and (max-width:1200px){
+    .scroll {
+        font-size: 24px;
+        padding-top: 25%;
+    }
+
+    .arrow {
+        font-size: 46px;
     }
 }
 
 @media only screen and (min-width: 1201px){
     .scroll {
-        font-size: 16px;
+        font-size: 20px;
         padding-top: 160px;
     }
 
     .arrow {
+        font-size: 40px;
         padding-bottom: 200px;
     }
 }
@@ -110,10 +115,11 @@ body {
     text-align: left;
 }
 
-@media only screen and (min-width: 800px) and (max-width:1200){
+@media only screen and (min-width: 700px) and (max-width:1200px){
     .header {
-        padding-top: 120px;
-        width: 400px;
+        padding-top: 20%;
+        width: 55%;
+        font-size: 280%;
     }
 }
 
@@ -121,6 +127,7 @@ body {
     .header {
         padding-top: 120px;
         width: 400px;
+        font-size: 44px;
     }
 }
 
@@ -156,15 +163,34 @@ body {
     padding-right: 30px;
 }
 
-@media only screen and (min-width: 800px) and (max-width:1200){
+@media only screen and (min-width: 700px) and (max-width:1200px){
     .about {
-        width: 1200px;
-        padding-top: 100px;
+        padding-top: 25%;
         font-family: Consolas, monaco, monospace;
-        font-size: 20px;
-        padding-left: 14%;
+        font-size: 160%;
+        padding-left: 3%;
         color: white;
         margin: auto;
+    }
+
+    .line-num {
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 15px;    
+    }
+
+    .indent > .line-num {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
+    .line-num2 {
+        font-size: 20px;
+        padding-right: 12px;
+    }
+
+    .indent > .line-num2 {
+        padding-right: 80px;
     }
 }
 
@@ -173,10 +199,28 @@ body {
         width: 1200px;
         padding-top: 100px;
         font-family: Consolas, monaco, monospace;
+        font-size: 24px;
+        padding-left: 23%;
+    }
+
+    .line-num {
         font-size: 20px;
-        padding-left: 14%;
-        color: white;
-        margin: auto;
+        padding-left: 10px;
+        padding-right: 15px;    
+    }
+
+    .indent > .line-num {
+        padding-left: 10px;        
+        padding-right: 90px;
+    }
+
+    .line-num2 {
+        font-size: 20px;
+        padding-right: 12px;
+    }
+
+    .indent > .line-num2 {
+        padding-right: 80px;
     }
 }
 
@@ -218,13 +262,13 @@ body {
     margin-top: 5px;
     margin-bottom: 0px;
     color: #6666ff;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 .project-description {
     margin-top: 5px;
     color: white;
-    font-size: 75%;
+    font-size: 70%;
 }
 
 #fade-text {
@@ -240,134 +284,84 @@ body {
     font-size: 60px;
 }
 
-@media only screen and (min-width: 800px) and (max-width:1200){
-.experience {
-    width: 1200px;
-    margin: auto;
-}
+@media only screen and (min-width: 700px) and (max-width:1200px){
+    .experience {
+        width: 80%;
+    }
 
-.spacer {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+    .project {
+        width: 100%;
+        height: 250px;
+    }
 
-.project {
-    width: 1200px;
-    height: 400px;
-    background-color: #404040;
-    box-shadow: 10px 10px 5px black;
-    cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
-}
+    .picture > img {
+        width: 250px;
+        height: 250px;
+    }
 
-.project:hover > #fade-text {
-    opacity:.9;
-}
+    .project-title {
+        font-size: 160%;
+    }
 
-.picture > img {
-    float: left;
-    width: 400px;
-    height: 400px;
-}
+    .project-description {
+        margin-top: 5px;
+        color: white;
+        font-size: 140%;
+    }
 
-.summary {
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    width: 700px;
-    height: 350px;
-    float: right;
-    text-align: right;
-}
+    .summary {
+        padding-left: 40%;
+    }
 
-.project-title {
-
-    color: #6666ff;
-    font-size: 30px;
-}
-
-.project-description {
-    color: white;
-    font-size: 24px;
-}
-
-#fade-text {
-    position: absolute;
-    background: black;
-    color: #fff;
-    opacity:0;
-    transition:1s;
-    width: 1200px;
-    height: 400px;
-    text-align: center;
-    line-height: 300px;
-    font-size: 60px;
-}
+    #fade-text {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1201px){
-.experience {
-    width: 1200px;
-    margin: auto;
-}
+    .experience {
+        width: 1200px;
+        margin: auto;
+    }
 
-.spacer {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+    .project {
+        width: 1200px;
+        height: 400px;
+    }
 
-.project {
-    width: 1200px;
-    height: 400px;
-    background-color: #404040;
-    box-shadow: 10px 10px 5px black;
-    cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
-}
+    .project:hover > #fade-text {
+        opacity:.9;
+    }
 
-.project:hover > #fade-text {
-    opacity:.9;
-}
+    .picture > img {
+        width: 400px;
+        height: 400px;
+    }
 
-.picture > img {
-    float: left;
-    width: 400px;
-    height: 400px;
-}
+    .summary {
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 50px;
+        width: 700px;
+        height: 350px;
+        float: right;
+        text-align: right;
+    }
 
-.summary {
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    width: 700px;
-    height: 350px;
-    float: right;
-    text-align: right;
-}
+    .project-title {
+        font-size: 30px;
+    }
 
-.project-title {
+    .project-description {
+        font-size: 24px;
+    }
 
-    color: #6666ff;
-    font-size: 30px;
-}
-
-.project-description {
-    color: white;
-    font-size: 24px;
-}
-
-#fade-text {
-    position: absolute;
-    background: black;
-    color: #fff;
-    opacity:0;
-    transition:1s;
-    width: 1200px;
-    height: 400px;
-    text-align: center;
-    line-height: 300px;
-    font-size: 60px;
-}
+    #fade-text {
+        width: 1200px;
+        height: 400px;
+        line-height: 300px;
+        font-size: 60px;
+    }
 }
 
 /* CSS for the closing remarks */
@@ -411,7 +405,7 @@ body {
     text-align: right;
 }
 
-@media only screen and (min-width: 800px) and (max-width:1200){
+@media only screen and (min-width: 700px) and (max-width:1200px){
 }
 
 @media only screen and (min-width: 1201px){

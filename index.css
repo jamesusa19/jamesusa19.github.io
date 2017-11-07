@@ -1,8 +1,7 @@
-body, html {
+    body, html {
     background-image: url("./img/background.jpg");
     margin: 0;
     padding: 0;
-    max-width: 100%;
 }
 
 /* Different colors for fonts */

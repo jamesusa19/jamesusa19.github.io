@@ -362,6 +362,32 @@
         font-size: 60px;
     }
 }
+/* CSS for the skills section */
+.skills {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 100px;
+}
+
+.skills-container {
+    background-color: #404040;
+    width: 90%;
+    margin:auto;
+    padding-top: 5px;
+    box-shadow: 10px 10px 5px black;
+    padding-bottom: 10px;
+}
+
+.skills-container img {
+    width: 100px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 
 /* CSS for the closing remarks */
 .closing {

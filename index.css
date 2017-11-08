@@ -388,6 +388,18 @@
     padding-bottom: 12px;
 }
 
+@media only screen and (min-width: 700px) and (max-width:1200px){
+    .skills-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .skills-container {
+        width: 1200px;
+    }
+}
+
 
 /* CSS for the closing remarks */
 .closing {

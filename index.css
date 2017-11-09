@@ -100,9 +100,8 @@
 /* CSS for the home page in header */
 .header {
     padding-top: 30%;
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
-    padding-left: 2%;
     font-size: 26px;
 }
 
@@ -153,10 +152,9 @@
     padding-top: 50px;
     font-family: Consolas, monaco, monospace;
     font-size: 16px;
-    padding-left: 5%;
     color: white;
-    margin: auto;
-    display: inline-block;
+    margin: 0 auto;
+    display: block;
 }
 
 .line-num {
@@ -186,7 +184,7 @@
         font-size: 160%;
         padding-left: 3%;
         color: white;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .line-num {
@@ -216,7 +214,6 @@
         padding-top: 100px;
         font-family: Consolas, monaco, monospace;
         font-size: 24px;
-        padding-left: 23%;
     }
 
     .line-num {

@@ -49,6 +49,8 @@
 }
 
 .arrow {
+    display: block;
+    text-decoration: none;
     color: white;
     font-size: 24px;
     margin : 0px;
@@ -56,7 +58,7 @@
     padding-bottom: 100px;
     cursor: pointer;
     animation: bounce;
-    animation-duration: 1s;
+    animation-duration: 600ms;
     animation-timing-function: cubic-bezier(0.62, 0.19, 0.38, 0.79);
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -66,6 +68,33 @@
 }
 
 @keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10%);
+  }   
+}
+
+@-moz-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10%);
+  }   
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10%);
+  }   
+}
+
+@-o-keyframes bounce {
   0% {
     transform: translateY(0px);
   }
@@ -303,20 +332,6 @@
     box-shadow: 1px 1px 10px #282828;
 }
 
-
-#fade-text {
-    position: absolute;
-    background: black;
-    color: #fff;
-    opacity:0;
-    transition:1s;
-    width: 95%;
-    height: 150px;
-    text-align: center;
-    line-height: 80px;
-    font-size: 60px;
-}
-
 @media only screen and (min-width: 700px) and (max-width:1200px){
     .experience {
         width: 80%;
@@ -346,8 +361,12 @@
         padding-left: 40%;
     }
 
-    #fade-text {
-        width: 80%;
+    .project-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 140%;
     }
 }
 
@@ -360,10 +379,6 @@
     .project {
         width: 1200px;
         height: 400px;
-    }
-
-    .project:hover > #fade-text {
-        opacity:.9;
     }
 
     .picture > img {
@@ -389,11 +404,14 @@
         font-size: 24px;
     }
 
-    #fade-text {
-        width: 1200px;
-        height: 400px;
-        line-height: 300px;
-        font-size: 60px;
+    .project-link {
+        margin-right: 50px;
+        margin-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 140%;
     }
 }
 /* CSS for the skills section */
